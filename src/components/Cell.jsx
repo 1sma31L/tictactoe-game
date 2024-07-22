@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable react/prop-types */
+import { useState } from "react";
 import Cross from "../assets/cross.png";
 import Circle from "../assets/circle.png";
 
@@ -20,7 +21,7 @@ function Cell({
 		setCells(copyCells);
 	};
 
-	const handleClick = (e) => {
+	const handleClick = () => {
 		if (winningMessage) return;
 		const taken = !!cells[id];
 		if (!taken) {

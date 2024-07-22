@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Cell from "./Cell";
 
 const winningCombos = [
@@ -56,9 +56,8 @@ function Board() {
 			setWinningCombo([]);
 		}
 	}, [cells]);
-   
+
 	useEffect(() => {
-      
 		return () => {};
 	}, []);
 	const classes = `md:w-[570px] w-[320px] md:h-[80px] h-[60px] m-[15px] mb-0 rounded-lg p-4 border-2 border-solid border-light text-light font-bold transition-all ${
