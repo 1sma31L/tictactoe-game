@@ -17,6 +17,7 @@ function Board() {
 	const [winningMessage, setWinningMessage] = useState("");
 	const [go, setGo] = useState("cross");
 	const [winningCombo, setWinningCombo] = useState([]);
+	const [draw, setDraw] = useState(false);
 	const message = `Its now ${go}'s turn`;
 	console.log(cells);
 
@@ -25,6 +26,7 @@ function Board() {
 		setWinningMessage("");
 		setGo("cross");
 		setWinningCombo([]);
+		setDraw(false);
 	};
 
 	useEffect(() => {
@@ -52,6 +54,7 @@ function Board() {
 			setWinningMessage("Cross Wins");
 			setWinningCombo(newWinningCombo);
 		} else {
+			if (cells.every((cell) => cell !== "")) setDraw(true);
 			setWinningMessage("");
 			setWinningCombo([]);
 		}
@@ -88,7 +91,9 @@ function Board() {
 			</div>
 			<div className={classes}>
 				<p className="text-center flex h-[100%] items-center justify-center">
-					{winningMessage ? winningMessage : null || message}
+					{draw
+						? "It's a draw"
+						: null || (winningMessage ? winningMessage : null) || message}
 				</p>
 			</div>
 			<div>
