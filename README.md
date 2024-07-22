@@ -1,4 +1,5 @@
 # React Tic-Tac-Toe Game
+[Check it out](https://1sma31l.github.io/tictactoe-game)
 <div style="width:80%; margin: auto;">
 
 ![Preview](./src/assets/preview.png) 
