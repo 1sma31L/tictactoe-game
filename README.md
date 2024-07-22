@@ -1,5 +1,8 @@
 # React Tic-Tac-Toe Game
+<div style="width:80%; margin: auto;">
 
+![Preview](./src/assets/preview.png) 
+</div>
 This is a simple Tic-Tac-Toe game implemented in React. The game features a 3x3 grid where two players take turns marking cells with either a circle or a cross. The game detects the winning combination and highlights the winning cells, and also handles the scenario of a draw.
 
 ## Features
