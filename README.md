@@ -30,7 +30,7 @@ Follow the instructions below to set up and run the project locally.
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/react-tic-tac-toe.git
+   git clone https://github.com/1sma31l/tictactoe-game.git
    cd react-tic-tac-to
 2.  Install the dependencies:
 ```sh
